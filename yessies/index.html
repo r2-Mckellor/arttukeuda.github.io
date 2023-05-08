@@ -13,14 +13,20 @@
       <!--Esan alku-->
         <div id="alku" class="alku">
 
-          <div class="taustakuva">
+          <div class="taustakuva vaihto">
             <img src="pictures/front_pic.png" alt="taustakuva">
+          </div>
+          <div class="taustakuva vaihto">
+            <img src="pictures/Eläinkuusikko.jpg" alt="taustakuva">
+          </div>
+          <div class="taustakuva vaihto">
+            <img src="pictures/minasoy_painetuttuotteet.jpg"taustakuva>
           </div>
           
           <div class="tervetuloa">
             <div class="flare">
               <img class="logo" src="pictures/icon.png" alt="">
-            <h1 class="viesti">Tervetuloa<br> Yessies<br>  prässipalveluun!</h1>
+              <h1 class="viesti">Tervetuloa<br> Yessies<br>  prässipalveluun!</h1>
             </div>
           </div>
         </div>
@@ -48,9 +54,6 @@
           </div>
           <div class="container">
               <a id="link" href="#palvelut">Palvelut</a>
-          </div>
-          <div class="container">
-              <a id="link" href="#portfolio">Portfolio</a>
           </div>
           <div class="container">
               <a id="link" href="#yhteystiedot">Yhteystiedot</a>
@@ -98,89 +101,64 @@
         <div id="palvelut" class="palvelut">
             <div class="panel">
               <h1>Palvelut</h1>
+
+              <div class="kauppa">
               <div class="tuote">
-                <img class="mainos" src="pictures/t-shirts-with-logo.webp" alt="t-paita">
-                <div class="kuvaus">
-                  <h1>Oma logo työvaatteeisiin</h1>
+                <img class="mainos" src="pictures/t-shirts-with-logo.webp" alt="t-paita" onclick="openPopup1()">
+                <div class="popup" id="popup1">
+                  <h2>Oma logo työvaatteeisiin</h2>
                   <p>Pystymme printtaamaan Firmasi logon tarroina tai työvaatteisiin</p>
+                  <div class="asiakas">
+                    <div class="thumbnail">
+                      <img class="malli" src="pictures/Hive.JPG" alt="">
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <a onclick="closePopup1()">Sulje</a>
+                    <a onclick="closePopup1()" id="link" href="#yhteystiedot">Kysy tarjousta</a>
+                  </div>
                 </div>
               </div>
+
+
               <div class="tuote">
-                <img class="mainos" src="pictures/logo.avif" alt="logo">
-                <div class="kuvaus">
-                  <h1>Oman logon suunnittelu ja prässäys</h1>
+                <img class="mainos" src="pictures/logo.avif" alt="logo"  onclick="openPopup2()">
+                <div class="popup" id="popup2">
+                  <h2>Oman logon suunnittelu ja prässäys</h2>
                   <p>Tarvitseeko firmasi logon suunnittelun ensin</p>
+                  <div class="asiakas">
+                    <div class="thumbnail">
+                      <img class="malli" src="pictures/hoitoneulalogo_black.png" alt="">
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <a onclick="closePopup2()">Sulje</a>
+                    <a onclick="closePopup2()" id="link" href="#yhteystiedot">Kysy tarjousta</a>
+                  </div>
                 </div>
-              </div>  
+              </div>
+
               <div class="tuote">  
-                
-                <img class="mainos" src="pictures/Käyntikortti etu.PNG" alt="">
-                <img class="mainos" src="pictures/Käyntikortti taka.PNG" alt="">
-                <div class="kuvaus">
-                  <h1>Käyntikortti</h1>
-                  <p>Käyntikorttien suunnittelu ja printtaus</p>
+                <img class="mainos" src="pictures/Käyntikortti etu.PNG" alt="" onclick="openPopup3()">
+                <div class="popup" id="popup3">
+                  <h2>Käyntikortit, Mainosliput ja Tarrat</h2>
+                  <p>Käyntikorttien, mainoslippujen ja tarrojen suunnittelu ja printtaus</p>
+                  <div class="asiakas">
+                    <div class="thumbnail">
+                      <img class="malli" src="pictures/ÖSK_konsert.png" alt="">
+                    </div>
+                  </div>
+                  <div class="btn">
+                    <a onclick="closePopup3()">Sulje</a>
+                    <a onclick="closePopup3()" id="link" href="#yhteystiedot">Kysy tarjousta</a>
+                  </div>
                 </div>
               </div>  
-          </div>
-        </div>
+
+            </div> 
+          </div> 
+        </div>  
          <!--Ari-Pekan loppu-->
-
-        <div id="portfolio" class="portfolio">
-            <div class="panel">
-              <h1>Portfolio</h1>
-             
-              <div class="asiakas">
-                <div class="thumbnail">
-                  <img class="malli" src="pictures/Eläinkuusikko.jpg" alt="">
-                </div>
-                <div class="description">
-                  <p>Työskentelin Satu Nyströmmin kanssa</p>
-                  <div class ="kommentti">
-                    <p>"Hommansa osaava ja joustava yrittäjä. Jos ei tiedä niin selvittää
-                      Jessica järjesti meidän henkilökunnalle hienot olkihatut logolla kesäksi. Tilasi ja painatti. Kiitos ja Anteeksi
-                      HemmaBäst Oy</p>
-                </div>
-                </div>
-              </div>
-             
-              <div class="asiakas">
-               <img class="malli" src="pictures/hemmabast.jpg" alt="">
-               <div class="description">
-                <p>Työskentelin Satu Nyströmmin kanssa</p>
-                <div class ="kommentti">
-                  <p>"Kaikkeen on löytynyt ratkaisu tai tuote. Jos ei itse tuota palvelua niin ohjaa toiselle osaavalle yritykselle.
-                    Päädyttiin roll-upin sijasta tilaamaan pahvisen ständin joka olikin edullisempi ja kätevämpi ratkaisu. Kiitos Jessica ideasta"</p>
-              </div>
-              </div>
-              </div>
-             
-              <div class="asiakas">
-               <img class="malli" src="pictures/minasoy_painetuttuotteet.jpg" alt="">
-               <div class="description">
-                <p>Työskentelin Satu Nyströmmin kanssa</p>
-                <div class ="kommentti">
-                    <p>"Jessicalta olen saanut mainostekstiilit näppärästi, hyvin ideoituina. Yksinyrittäjänä tarve on vähäinen, häneltä onnistunut ostaa muutaman kappaleen kerrallaan.
-                     Logon suunnittelu oli ihan huippua, tulos oli loistava ja yhteistyö helppoa ja selkeää."</p>
-                </div>
-              </div>
-              </div>
-
-              <div class="asiakas">
-                <img class="malli" src="pictures/Snap 2023-04-10 at 16.17.24.jpg" alt="">
-                <div class="description">
-                 <p>Työskentelin Satu Nyströmmin kanssa</p>
-                 <div class ="kommentti">
-                     <p>"Toimittaa aina painokelpoiset materiaalit aikatauluun mennessä"</p>
-                 </div>
-               </div>
-               </div>
-
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-              
-            </div>
-        </div>
-
       <!--Ninon alku-->
         <div id="yhteystiedot" class="yhteystiedot">
             <div class="panel">
@@ -247,5 +225,6 @@
       
 
       <script src="script.js"></script>
+      <script ></script>
   </body>
 </html>

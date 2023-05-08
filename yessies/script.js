@@ -1,24 +1,44 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex = 0;
+showSlides();
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("asiakas");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
- 
-    slides[slideIndex-1].style.display = "block";
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("taustakuva");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000);
+}
+
+let popup1 = document.getElementById("popup1");
+
+function openPopup1(){
+  popup1.classList.add("open-popup")
+}
+
+function closePopup1(){
+  popup1.classList.remove("open-popup")
+}
+
+let popup2 = document.getElementById("popup2");
+
+function openPopup2(){
+  popup2.classList.add("open-popup")
+}
+
+function closePopup2(){
+  popup2.classList.remove("open-popup")
+}
+
+let popup3 = document.getElementById("popup3");
+
+function openPopup3(){
+  popup3.classList.add("open-popup")
+}
+
+function closePopup3(){
+  popup3.classList.remove("open-popup")
+}
