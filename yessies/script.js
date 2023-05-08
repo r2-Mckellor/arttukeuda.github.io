@@ -13,6 +13,13 @@ function showSlides() {
   setTimeout(showSlides, 5000);
 }
 
+/*let carouselIndex = 0;
+showCarousel();
+
+function moveSlide() {
+  let j;
+}*/
+
 let popup1 = document.getElementById("popup1");
 
 function openPopup1(){

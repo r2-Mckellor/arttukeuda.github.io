@@ -4,12 +4,10 @@
         <title>Yessies</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <link class="picture" rel="icon" href="pictures/icon.png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     </head>
     <body>
-     <div> 
-
       <!--Esan alku-->
         <div id="alku" class="alku">
 
@@ -80,18 +78,42 @@
     </div>
        <!--Esan loppu-->
     
+
+  <div class="slide">    
+    <div class="karuselli">
+      <img class="post" src="pictures/DSC02668.JPG" alt="">
+      <img class="post" src="pictures/DSC_0179.JPG" alt="">
+      <img class="post" src="pictures/DSC_0254.JPG" alt="">
+      <img class="post" src="pictures/DSC_0809.JPG" alt="">
+      <img class="post" src="pictures/DSC00074.JPG" alt="">
+    </div>
+
+    <div class="karuselli">
+      <img class="post" src="pictures/DSC02668.JPG" alt="">
+      <img class="post" src="pictures/DSC_0179.JPG" alt="">
+      <img class="post" src="pictures/DSC_0254.JPG" alt="">
+      <img class="post" src="pictures/DSC_0809.JPG" alt="">
+      <img class="post" src="pictures/DSC00074.JPG" alt="">
+    </div>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+  </div> 
+
+
     <div class="middleSection">
-    
 
-
-         <!--Anastasian alku-->
+      <!--Anastasian alku-->
         <div id="etusivu" class="etusivu">
             <div class="panel">
               <h1>Tietoa yrityksestä</h1>
-              <p>Olen Jessica Karlsson ja olen tehnyt työtä paino- ja  mainostuotteiden kanssa jo vuodesta 2004. Käsieni kautta on liikkunut useita painotuotteita, mainostekstiilejä ja mainoslahjoja.</p>
-                <p>Olen kokenut ja aikaansaava mainosgraafikko ja pidän aina tiukasti kiinni sovitusta aikatauluista. Yrittäjäurani aikana olenkin saanut suunnitella ja toteuttaa asiakkaitteni kanssa hyvin erilaisia painotuotteita käyntikortista - laajaan tuotekuvastoon, tuote-etiketistä - nettibanneriin ja myös oppikirjoja.</p>
-                <p>Tarinani sai muutoksen vuonna 2020 keväällä kun aloitin opiskelemaan Artesaaniksi. Asiakkaat haluavat yhä laadukkaampia ja lähellä tuotettuja lahjaesineitä ja kodinsisustustavaroita.</p>
-                <p>Toimin Itä-Uudeltamaalta käsin ja tunnen henkilökohtaisesti suuren joukon taitavia käsityöläisiä.</p>
+              <p>Yessies mainostoimisto on perustettu vuonna 2004 ja työskentelee Uudellamaalla. 
+              Erikoisosaamisena on digitaaliset painoaineistot. Mahdollisuus myös yritysilmeen, nettisivujen ja tekstiilipainatuksien suunnitteluun.
+              Erotun muista yrityksistä siinä, että meiltä on mahdollista tilata pienissä erissä.
+              Lisäksi, kun painetaan vaatteita, käytetään sähköä, joka tuotetaan aurinkopaneeleilla toimistossani.
+               Pääasiallisesti käytetään Chemica-kalvot ovat OEKO-TEX Standard 100 -sertifioituja ja VEGAN-merkittyjä.</p> 
             </div>
         </div>
            <!--Anastasian loppu-->
@@ -113,6 +135,11 @@
                       <img class="malli" src="pictures/Hive.JPG" alt="">
                     </div>
                   </div>
+                  <div class="tietoa">
+                        <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
+                          Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
+                          Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
+                  </div>
                   <div class="btn">
                     <a onclick="closePopup1()">Sulje</a>
                     <a onclick="closePopup1()" id="link" href="#yhteystiedot">Kysy tarjousta</a>
@@ -122,7 +149,7 @@
 
 
               <div class="tuote">
-                <img class="mainos" src="pictures/logo.avif" alt="logo"  onclick="openPopup2()">
+                <img class="mainos" src="pictures/tpaita.png" alt="logo"  onclick="openPopup2()" onclick="closePopup3()">
                 <div class="popup" id="popup2">
                   <h2>Oman logon suunnittelu ja prässäys</h2>
                   <p>Tarvitseeko firmasi logon suunnittelun ensin</p>
@@ -130,6 +157,11 @@
                     <div class="thumbnail">
                       <img class="malli" src="pictures/hoitoneulalogo_black.png" alt="">
                     </div>
+                  </div>
+                  <div class="tietoa">
+                    <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
+                      Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
+                      Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
                   </div>
                   <div class="btn">
                     <a onclick="closePopup2()">Sulje</a>
@@ -148,6 +180,11 @@
                       <img class="malli" src="pictures/ÖSK_konsert.png" alt="">
                     </div>
                   </div>
+                  <div class="tietoa">
+                    <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
+                      Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
+                      Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
+                  </div>
                   <div class="btn">
                     <a onclick="closePopup3()">Sulje</a>
                     <a onclick="closePopup3()" id="link" href="#yhteystiedot">Kysy tarjousta</a>
@@ -158,8 +195,8 @@
             </div> 
           </div> 
         </div>  
-         <!--Ari-Pekan loppu-->
-      <!--Ninon alku-->
+        <!--Ari-Pekan loppu-->
+        <!--Ninon alku-->
         <div id="yhteystiedot" class="yhteystiedot">
             <div class="panel">
               <h1>Ota yhteyttä</h1>
@@ -225,6 +262,5 @@
       
 
       <script src="script.js"></script>
-      <script ></script>
   </body>
 </html>
