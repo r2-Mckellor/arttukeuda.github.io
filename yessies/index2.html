@@ -4,7 +4,7 @@
         <title>Yessies</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <link class="picture" rel="icon" href="pictures/icon.png">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -12,9 +12,15 @@
 
       <!--Esan alku-->
         <div id="alku" class="alku">
-       
-          <div class="taustakuva">
+
+           <div class="taustakuva vaihto">
             <img src="pictures/front_pic.png" alt="taustakuva">
+          </div>
+          <div class="taustakuva vaihto">
+            <img src="pictures/Eläinkuusikko.jpg" alt="taustakuva">
+          </div>
+          <div class="taustakuva vaihto">
+            <img src="pictures/minasoy_painetuttuotteet.jpg"taustakuva>
           </div>
 
           <div class="tervetuloa">
@@ -74,6 +80,42 @@
 
     </div>
        <!--Esan loppu-->
+
+       <div class="slide">    
+        <div class="karuselli">
+          <img class="post" src="pictures/DSC02668.JPG" alt="">
+          <img class="post" src="pictures/DSC_0179.JPG" alt="">
+          <img class="post" src="pictures/DSC_0254.JPG" alt="">
+          <img class="post" src="pictures/DSC_0809.JPG" alt="">
+          <img class="post" src="pictures/DSC00074.JPG" alt="">
+        </div>
+    
+        <div class="karuselli">
+          <img class="post" src="pictures/DSC_0809.JPG" alt="">
+          <img class="post" src="pictures/DSC_0254.JPG" alt="">
+          <img class="post" src="pictures/DSC_0179.JPG" alt="">
+          <img class="post" src="pictures/DSC00074.JPG" alt="">
+          <img class="post" src="pictures/DSC02668.JPG" alt="">
+
+        </div>
+
+        <div class="karuselli">
+          <img class="post" src="pictures/DSC_0254.JPG" alt="">
+          <img class="post" src="pictures/DSC_0809.JPG" alt="">
+          <img class="post" src="pictures/DSC02668.JPG" alt="">
+          <img class="post" src="pictures/DSC00074.JPG" alt="">
+          <img class="post" src="pictures/DSC_0179.JPG" alt="">
+
+        </div>
+
+        <div class="btn2">
+          <span class="dot" onclick="currentSet(1)"></span> 
+          <span class="dot" onclick="currentSet(2)"></span> 
+          <span class="dot" onclick="currentSet(3)"></span> 
+        </div>
+      </div> 
+
+
     
     <div class="middleSection">
 
@@ -91,101 +133,142 @@
 
            
             <!--Ari-Pekan alku-->
-        <div id="palvelut" class="palvelut">
-            <div class="panel">
-              <h1>Palvelut</h1>
-              <div class="tuote">
-                <img class="mainos" src="pictures/t-shirts-with-logo.webp" alt="t-paita">
-                <div class="kuvaus">
-                  <h1>Oma logo työvaatteeisiin</h1>
-                  <p>Pystymme printtaamaan Firmasi logon tarroina tai työvaatteisiin</p>
+            <div id="palvelut" class="palvelut">
+              <div class="panel">
+                <h1>Palvelut</h1>
+  
+                <div class="kauppa">
+                  <img class="mainos" src="pictures/t-shirts-with-logo.webp" alt="t-paita" onclick="openPopup1()">
+                  <div class="popup" id="popup1">
+                    <h2>Oma logo työvaatteeisiin</h2>
+                    <p>Pystymme printtaamaan Firmasi logon tarroina tai työvaatteisiin</p>
+                    <div class="asiakas">
+                      <div class="thumbnail">
+                        <img class="malli" src="pictures/Hive.JPG" alt="">
+                      </div>
+                      <div class="tietoa">
+                        <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
+                          Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
+                          Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
+                      </div>
+                    </div>
+                    <div class="btn">
+                      <a onclick="closePopup1()">Sulje</a>
+                      <a onclick="closePopup1()" id="link" href="#yhteystiedot">Kysy tarjousta</a>
+                    </div>
+                  </div>
+  
+  
+                  <img class="mainos" src="pictures/logo.avif" alt="logo"  onclick="openPopup2()">
+                  <div class="popup" id="popup2">
+                    <h2>Oman logon suunnittelu ja prässäys</h2>
+                    <p>Tarvitseeko firmasi logon suunnittelun ensin</p>
+                    <div class="asiakas">
+                      <div class="thumbnail">
+                        <img class="malli" src="pictures/hoitoneulalogo_black.png" alt="">
+                      </div>
+                      <div class="tietoa">
+                        <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
+                          Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
+                          Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
+                      </div>
+                    </div>
+                    <div class="btn">
+                      <a onclick="closePopup2()">Sulje</a>
+                      <a onclick="closePopup2()" id="link" href="#yhteystiedot">Kysy tarjousta</a>
+                    </div>
+                  </div>
+  
+                  <img class="mainos" src="pictures/Käyntikortti etu.PNG" alt="" onclick="openPopup3()">
+                  <div class="popup" id="popup3">
+                    <h2>Käyntikortit, Mainosliput ja Tarrat</h2>
+                    <p>Käyntikorttien, mainoslippujen ja tarrojen suunnittelu ja printtaus</p>
+                    <div class="asiakas">
+                      <div class="thumbnail">
+                        <img class="malli" src="pictures/ÖSK_konsert.png" alt="">
+                      </div>
+                      <div class="tietoa">
+                        <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
+                          Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
+                          Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
+                      </div>
+                    </div>
+                    <div class="btn">
+                      <a onclick="closePopup3()">Sulje</a>
+                      <a onclick="closePopup3()" id="link" href="#yhteystiedot">Kysy tarjousta</a>
+                    </div>
+                  </div>
+  
+              </div> 
+            </div> 
+          </div>  
+           <!--Ari-Pekan loppu-->
+        <!--Ninon alku-->
+          <div id="yhteystiedot" class="yhteystiedot">
+              <div class="panel">
+                <h1>Ota yhteyttä</h1>
+                <div class="input">
+                  <div class="padding">
+                  <p>Nimi</p>
+                  </div>
+                  <input class="text" type="text">
                 </div>
-              </div>
-              <div class="tuote">
-                <img class="mainos" src="pictures/logo.avif" alt="logo">
-                <div class="kuvaus">
-                  <h1>Oman logon suunnittelu ja prässäys</h1>
-                  <p>Tarvitseeko firmasi logon suunnittelun ensin</p>
+              
+                <div class="input">
+                  <div class="padding">
+                    <p>Sähköposti</p>
+                  </div>
+                 <input class="text" type="text">
                 </div>
-              </div>  
-              <div class="tuote">  
-                
-                <img class="mainos" src="pictures/Käyntikortti etu.PNG" alt="">
-                <img class="mainos" src="pictures/Käyntikortti taka.PNG" alt="">
-                <div class="kuvaus">
-                  <h1>Käyntikortti</h1>
-                  <p>Käyntikorttien suunnittelu ja printtaus</p>
+              
+                <div class="input">
+                  <div class="padding">
+                    <p>Viesti</p>
+                  </div>
+                  <textarea class="text" rows="10"></textarea>
                 </div>
-              </div>  
+               
+                <div class="box">
+                  <input type="checkbox">
+                  <p>Haluan liittyä postituslistallenne</p>
+                </div>
+  
+                <div class="box">
+                  <input type="checkbox">
+                  <p>Hyväksyn sivuston käyttöehdot</p>
+                </div>
+  
+                <div class="submit">
+                  <button>Lähetä</button>
+                </div>
           </div>
-        </div>
-         <!--Ari-Pekan loppu-->
-
-      <!--Ninon alku-->
-        <div id="yhteystiedot" class="yhteystiedot">
-            <div class="panel">
-              <h1>Ota yhteyttä</h1>
-              <div class="input">
-                <div class="padding">
-                <p>Nimi</p>
-                </div>
-                <input class="text" type="text">
+  
+          <footer>
+            <div class="loppu">
+              <div class="tiedot">
+                <p>Puhelin: 040 - 5049704</p>
               </div>
-            
-              <div class="input">
-                <div class="padding">
-                  <p>Sähköposti</p>
-                </div>
-               <input class="text" type="text">
+              <div class="tiedot">
+                <p>Sähköpostiosoite: info.yessies@gmail.com</p>
               </div>
-            
-              <div class="input">
-                <div class="padding">
-                  <p>Viesti</p>
-                </div>
-                <textarea class="text" rows="10"></textarea>
+              <p>Toiminimi Jessica Karlsson</p>
+              <p>Mosantie 23 , 04170 Paippinen</p>
+              <p>Sipoo</p>
+              <p>Y-tunnus: 1873624-3</p>
+              <h1>Yhteistyökumppanit</h1>
+              <div class="buddies">
+                <img class="kumppanit" src="pictures/logo-vipmainos-pre2018-valk.png" alt="vipmainos-logo">
+                <img class="kumppanit" src="pictures/lataus.png" alt="lataus-logo">
+                <img class="kumppanit" src="pictures/logo.png" alt="Fruit-logo">
+                <img class="kumppanit" src="pictures/Logo4-2.jpg" alt="Offset-Pave-logo">
+                <img class="kumppanit" src="pictures/SkyPro.jpg" alt="SkyPro-logo">
               </div>
-             
-              <div class="box">
-                <input type="checkbox">
-                <p>Haluan liittyä postituslistallenne</p>
-              </div>
-
-              <div class="box">
-                <input type="checkbox">
-                <p>Hyväksyn sivuston käyttöehdot</p>
-              </div>
-
-              <div class="submit">
-                <button>Lähetä</button>
-              </div>
-        </div>
-
-        <footer>
-          <div class="loppu">
-            <div class="tiedot">
-              <p>Puhelin: 040 - 5049704</p>
             </div>
-            <div class="tiedot">
-              <p>Sähköpostiosoite: info.yessies@gmail.com</p>
-            </div>
-            <p>Toiminimi Jessica Karlsson</p>
-            <p>Mosantie 23 , 04170 Paippinen</p>
-            <p>Sipoo</p>
-            <p>Y-tunnus: 1873624-3</p>
-            <h1>Yhteistyökumppanit</h1>
-            <div class="buddies">
-              <img class="kumppanit" src="pictures/logo-vipmainos-pre2018-valk.png" alt="vipmainos-logo">
-              <img class="kumppanit" src="pictures/lataus.png" alt="lataus-logo">
-              <img class="kumppanit" src="pictures/logo.png" alt="Fruit-logo">
-              <img class="kumppanit" src="pictures/Logo4-2.jpg" alt="Offset-Pave-logo">
-              <img class="kumppanit" src="pictures/SkyPro.jpg" alt="SkyPro-logo">
-            </div>
-          </div>
-        </footer>
-      <!--Ninon loppu-->
-      
-
-      <script src="script.js"></script>
-  </body>
-</html>
+          </footer>
+        <!--Ninon loppu-->
+        
+  
+        <script src="script.js"></script>
+        <script ></script>
+    </body>
+  </html>

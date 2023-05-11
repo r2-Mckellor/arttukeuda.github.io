@@ -3,12 +3,14 @@
     <head>
         <title>Yessies</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <link class="picture" rel="icon" href="pictures/icon.png">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+        <link class="picture" rel="icon" href="pictures/icon.png"> <!--Sisältää yrityksen logon lehden kulmassa-->
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet"> <!--Sisältää fonti tyylin "Roboto"-->
     </head>
     <body>
-      <!--Esan alku-->
+      
+      <!--Div "alku" on sivun ensimmäinen osio, joka sisältää automaattisen karusellin "taustakuva vaihto"
+          ja "tervertuloa" osion, joka sisältää yrityksen logon-->
         <div id="alku" class="alku">
 
           <div class="taustakuva vaihto">
@@ -28,11 +30,16 @@
             </div>
           </div>
         </div>
+        <!--Div "alku" päätös-->
 
-
+      <!--Tämä osio on sivun yläppalkki ja sisältää kolme eri containeriä eri nappuloita varten-->
       <div class="header">
+
+        <!--Vasen puoli, jossa on yrityksen sosiaaliset mediat-->
         <div class="left-side">
           <a href="https://www.facebook.com/MainospalvelutYessies">
+            <!--Käytin Svg-logoja eli "Scalable Vector Graphics", joka meinaa kuvaa jota voi muokata css:n avulla oman näköiseksi.
+                Jos ajattelet käyttää näitä niin varmista, että ne ovat julkisia ja vapaita käyttää-->
             <svg class="media" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#ffffff"><path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm4 7.278V4.5h-2.286c-2.1 0-3.428 1.6-3.428 3.889v1.667H8v2.777h2.286V19.5h2.857v-6.667h2.286L16 10.056h-2.857V8.944c0-1.11.572-1.666 1.714-1.666H16z"/></svg>
           </a>
           <a href="https://www.instagram.com/info.yessies/">
@@ -43,8 +50,13 @@
           </a>
         </div>
 
+       
+        <!--Keski kohta, jossa on sivun navigointi nappulat sivun eri osioihin. 
+            Tässä myös lötyy nappi toiselle staattiselle sivulle, joka on käännetty ruotsiksi-->
         <div class="middle">
+            <!--Div "container" on vain sitä varten, että "middle" sisällä kaikille napeille on jaettu oma paikka ja alue-->
           <div class="container">
+              <!--Link vie annetun nimisen elementin luokse-->
               <a id="link" href="#alku">Etusivu</a>
           </div>
           <div class="container">
@@ -64,6 +76,9 @@
           </div>
         </div>
 
+        <!--Oikea puoli, jossa on  yrityksen puhelinnumero ja sähköposti.
+            Tarkoitus oli vielä lisätä nappiin toiminto, joka kopioisi sen kohdalla olevan tekstin-->
+        
         <div class="right-side">
           <a href="">
             <svg class="media" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -76,57 +91,83 @@
           <p>info.yessies@gmail.com</p>
         </div>
     </div>
-       <!--Esan loppu-->
+       <!--Div "header" päätös-->
+       
+
+    <!--Div "Slide" on sivun 5 kuva kuvakaruselli-->
+    <!--Div "slide" toimii "karuselli" alueena, joka antaa meille muokkaus mahdollisuuden formatisoida sitä paremmin-->
+       <div class="slide">    
+        <!--Karusellit on luokiteltu kolmeen settiin, jonka avulla karuselli pystyy pyörittää viiden setin kuva kollaaseja eikä vain yhtä-->
+        <div class="karuselli">
+          <!--Kuvia ei ollut tarpeeksi, että karuselliin olisi saanut 15 eri kuvaa asiakkaiden
+              tuotteista joten päivittäkää sitten kun jessica ottaa enemmän kuvia driveen-->
+          <img class="post" src="pictures/DSC02668.JPG" alt="">
+          <img class="post" src="pictures/DSC_0179.JPG" alt="">
+          <img class="post" src="pictures/DSC_0254.JPG" alt="">
+          <img class="post" src="pictures/DSC_0809.JPG" alt="">
+          <img class="post" src="pictures/DSC00074.JPG" alt="">
+        </div>
     
+        <div class="karuselli">
+          <img class="post" src="pictures/DSC_0809.JPG" alt="">
+          <img class="post" src="pictures/DSC_0254.JPG" alt="">
+          <img class="post" src="pictures/DSC_0179.JPG" alt="">
+          <img class="post" src="pictures/DSC00074.JPG" alt="">
+          <img class="post" src="pictures/DSC02668.JPG" alt="">
 
-  <div class="slide">    
-    <div class="karuselli">
-      <img class="post" src="pictures/DSC02668.JPG" alt="">
-      <img class="post" src="pictures/DSC_0179.JPG" alt="">
-      <img class="post" src="pictures/DSC_0254.JPG" alt="">
-      <img class="post" src="pictures/DSC_0809.JPG" alt="">
-      <img class="post" src="pictures/DSC00074.JPG" alt="">
-    </div>
+        </div>
 
-    <div class="karuselli">
-      <img class="post" src="pictures/DSC02668.JPG" alt="">
-      <img class="post" src="pictures/DSC_0179.JPG" alt="">
-      <img class="post" src="pictures/DSC_0254.JPG" alt="">
-      <img class="post" src="pictures/DSC_0809.JPG" alt="">
-      <img class="post" src="pictures/DSC00074.JPG" alt="">
-    </div>
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span> 
-      <span class="dot" onclick="currentSlide(2)"></span> 
-      <span class="dot" onclick="currentSlide(3)"></span> 
-    </div>
-  </div> 
+        <div class="karuselli">
+          <img class="post" src="pictures/DSC_0254.JPG" alt="">
+          <img class="post" src="pictures/DSC_0809.JPG" alt="">
+          <img class="post" src="pictures/DSC02668.JPG" alt="">
+          <img class="post" src="pictures/DSC00074.JPG" alt="">
+          <img class="post" src="pictures/DSC_0179.JPG" alt="">
 
+        </div>
+
+        <!--Div "btn2" toimii nappuloiden alueena-->
+        <div class="btn2">
+          <!--Jokaiselle "dot" painikkeelle on luokiteltu oma setti kuvia ja vaihtaa niitä 1-3 välillä kun painaa-->
+          <span class="dot" onclick="currentSet(1)"></span> 
+          <span class="dot" onclick="currentSet(2)"></span> 
+          <span class="dot" onclick="currentSet(3)"></span> 
+        </div>
+      </div> 
+      <!--Div "slide" päätös-->
 
     <div class="middleSection">
 
-      <!--Anastasian alku-->
+         <!--Div "etusivu" sisältää perus tietoa yrityksestä.
+              Tässä divisissä on myös id jota headerin keskikohdan nappulat etsivät-->
         <div id="etusivu" class="etusivu">
+             <!--Div "panel" on sama jokaisessa tulevassa osiossa ja toimii nimensä mukaan panelina sisällölle-->
             <div class="panel">
               <h1>Tietoa yrityksestä</h1>
               <p>Yessies mainostoimisto on perustettu vuonna 2004 ja työskentelee Uudellamaalla. 
-              Erikoisosaamisena on digitaaliset painoaineistot. Mahdollisuus myös yritysilmeen, nettisivujen ja tekstiilipainatuksien suunnitteluun.
-              Erotun muista yrityksistä siinä, että meiltä on mahdollista tilata pienissä erissä.
-              Lisäksi, kun painetaan vaatteita, käytetään sähköä, joka tuotetaan aurinkopaneeleilla toimistossani.
+              Erikoisosaamisena on digitaaliset painoaineistot.
+               Mahdollisuus myös yritysilmeen, nettisivujen ja tekstiilipainatuksien suunnitteluun.<br>
+              Erotun muista yrityksistä siinä, että meiltä on mahdollista tilata pienissä erissä. <br>
+              Lisäksi, kun painetaan vaatteita, käytetään sähköä, joka tuotetaan aurinkopaneeleilla toimistossani.<br>
                Pääasiallisesti käytetään Chemica-kalvot ovat OEKO-TEX Standard 100 -sertifioituja ja VEGAN-merkittyjä.</p> 
             </div>
         </div>
-           <!--Anastasian loppu-->
+           <!--Div "etusivu" päätös-->
 
            
-            <!--Ari-Pekan alku-->
+        <!--Palvelut osiossa lötyy yrityksen tuotteet-->
         <div id="palvelut" class="palvelut">
             <div class="panel">
               <h1>Palvelut</h1>
 
+
+              <!--Div "kauppa" toimii kaikien tuotteiden alueena ja sillä pystytään muokata koko tämän osion rakennusta,
+                  jos uusia tuotteita tulee tai pitää formatisoida pienempiin ruutuihin-->
               <div class="kauppa">
-              <div class="tuote">
+                <!--"mainos" toimii nappina, joka tuo esille popup ikkunnan.-->
                 <img class="mainos" src="pictures/t-shirts-with-logo.webp" alt="t-paita" onclick="openPopup1()">
+                <!--Div "popup" on elementti, joka on näkymätön siihen asti kunnes "mainos kuvaketta painetaan."
+                    Tämä elementti sisältää tuoteen tiedot-->
                 <div class="popup" id="popup1">
                   <h2>Oma logo työvaatteeisiin</h2>
                   <p>Pystymme printtaamaan Firmasi logon tarroina tai työvaatteisiin</p>
@@ -134,22 +175,22 @@
                     <div class="thumbnail">
                       <img class="malli" src="pictures/Hive.JPG" alt="">
                     </div>
-                  </div>
-                  <div class="tietoa">
-                        <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
-                          Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
-                          Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
+                    <div class="tietoa">
+                      <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
+                        Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
+                        Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
+                    </div>
                   </div>
                   <div class="btn">
+                      <!--popupissa on kaksi sulje nappia toinen pelkästään sulkee ja toinen sulkee
+                          ja vie "yhteystiedot" panelille, jossa asiakas voi kysyä lisää-->
                     <a onclick="closePopup1()">Sulje</a>
                     <a onclick="closePopup1()" id="link" href="#yhteystiedot">Kysy tarjousta</a>
                   </div>
                 </div>
-              </div>
 
 
-              <div class="tuote">
-                <img class="mainos" src="pictures/tpaita.png" alt="logo"  onclick="openPopup2()" onclick="closePopup3()">
+                <img class="mainos" src="pictures/logo.avif" alt="logo"  onclick="openPopup2()">
                 <div class="popup" id="popup2">
                   <h2>Oman logon suunnittelu ja prässäys</h2>
                   <p>Tarvitseeko firmasi logon suunnittelun ensin</p>
@@ -157,20 +198,18 @@
                     <div class="thumbnail">
                       <img class="malli" src="pictures/hoitoneulalogo_black.png" alt="">
                     </div>
-                  </div>
-                  <div class="tietoa">
-                    <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
-                      Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
-                      Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
+                    <div class="tietoa">
+                      <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
+                        Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
+                        Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
+                    </div>
                   </div>
                   <div class="btn">
                     <a onclick="closePopup2()">Sulje</a>
                     <a onclick="closePopup2()" id="link" href="#yhteystiedot">Kysy tarjousta</a>
                   </div>
                 </div>
-              </div>
 
-              <div class="tuote">  
                 <img class="mainos" src="pictures/Käyntikortti etu.PNG" alt="" onclick="openPopup3()">
                 <div class="popup" id="popup3">
                   <h2>Käyntikortit, Mainosliput ja Tarrat</h2>
@@ -179,24 +218,24 @@
                     <div class="thumbnail">
                       <img class="malli" src="pictures/ÖSK_konsert.png" alt="">
                     </div>
-                  </div>
-                  <div class="tietoa">
-                    <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
-                      Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
-                      Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
+                    <div class="tietoa">
+                      <p>Paitoja saa ostettua ostettua suurissa erissä tai vaikka yhden kappaleen<br>
+                        Tuotteet on tehty ympäristöystävällisillä materiaaleilla<br>
+                        Paitoja saa kaikissa koissa ja värejä löytyy rajallinen määrä</p>
+                    </div>
                   </div>
                   <div class="btn">
                     <a onclick="closePopup3()">Sulje</a>
                     <a onclick="closePopup3()" id="link" href="#yhteystiedot">Kysy tarjousta</a>
                   </div>
                 </div>
-              </div>  
 
             </div> 
           </div> 
         </div>  
-        <!--Ari-Pekan loppu-->
-        <!--Ninon alku-->
+        <!--Div "palvelut" päätös-->
+
+      <!--Yhteystiedot osiossa pystyy ottaa yheyttä jessicaan-->
         <div id="yhteystiedot" class="yhteystiedot">
             <div class="panel">
               <h1>Ota yhteyttä</h1>
@@ -235,7 +274,9 @@
                 <button>Lähetä</button>
               </div>
         </div>
+        <!--Div "yhetystiedot" päätös-->
 
+        <!--Footterissa löytyy vielä kaikki tarvittavat tiedot yrityksestä ja heidän yhteistyökumppanit-->
         <footer>
           <div class="loppu">
             <div class="tiedot">
@@ -258,9 +299,9 @@
             </div>
           </div>
         </footer>
-      <!--Ninon loppu-->
+      <!--"footer" päätös-->
       
-
+        
       <script src="script.js"></script>
   </body>
 </html>

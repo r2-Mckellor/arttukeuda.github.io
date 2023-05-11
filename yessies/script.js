@@ -1,3 +1,4 @@
+//slideshow
 let slideIndex = 0;
 showSlides();
 
@@ -13,13 +14,35 @@ function showSlides() {
   setTimeout(showSlides, 5000);
 }
 
-/*let carouselIndex = 0;
-showCarousel();
+//karuselli
+let carouselIndex = 1;
+nextSet(carouselIndex);
 
-function moveSlide() {
+function currentSet(n) {
+  nextSet(carouselIndex = n);
+}
+
+function nextSet(n) {
   let j;
-}*/
+  let set = document.getElementsByClassName("karuselli");
+  let dot = document.getElementsByClassName("dot");
+  if (n > set.length) {
+    carouselIndex = 1
+  }
+  if (n < 1) {
+    carouselIndex = set.length
+  }
+  for (j = 0; j < set.length; ++j) {
+    set[j].style.display = "none";
+  }
+  for (j = 0; j < dot.length; j++) {
+    dot[j].className = dot[j].className.replace("active", "");
+  }
+  set[carouselIndex-1].style.display = "block";  
+  dot[carouselIndex-1].className += " active";
+}
 
+//popup
 let popup1 = document.getElementById("popup1");
 
 function openPopup1(){
